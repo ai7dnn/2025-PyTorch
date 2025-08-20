@@ -5,6 +5,15 @@
 
 ## sample code
 ```
+x = torch.tensor([10, 20, 30])
+print(x.shape)         # torch.Size([3])
+
+y = x.unsqueeze(1)
+print(y.shape)         # torch.Size([3, 1])
+print(y)
+```
+
+```
 import torch
 from torch.utils.data import WeightedRandomSampler, DataLoader, TensorDataset
 
